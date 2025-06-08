@@ -10,7 +10,7 @@
         "source": "**",
         "run": {
           "serviceId": "dibsy-deals",
-          "region": "europe-west4"
+          "region": "europe-west1"
         }
       }
     ]
