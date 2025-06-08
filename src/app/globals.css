@@ -1,0 +1,112 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 100% 95%; /* #F0E6FF - Desaturated light-purple */
+    --foreground: 270 25% 25%; /* #4D3F4D - Dark Purple for text */
+
+    --card: 0 0% 100%; /* #FFFFFF - White */
+    --card-foreground: 270 25% 25%; /* #4D3F4D */
+
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 270 25% 25%; /* #4D3F4D */
+
+    --primary: 271 76% 53%; /* #8A2BE2 - Saturated violet */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF - White for text on primary */
+
+    --secondary: 262 52% 70%; /* #A999E3 - Lighter Blue-Violet */
+    --secondary-foreground: 270 25% 25%; /* #4D3F4D */
+
+    --muted: 255 50% 90%; /* #E6DFFF - Very Light Greyish Purple */
+    --muted-foreground: 270 15% 45%; /* #6A5F70 - Darker Muted Purple/Grey */
+
+    --accent: 262 52% 58%; /* #6A5ACD - Analogous blue-violet */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+
+    --destructive: 0 84% 60%; /* Standard Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 255 30% 88%; /* #DDD8E6 - Light Purple-Grey Border */
+    --input: 255 50% 92%; /* #EBE6F5 - Slightly darker than muted bg for input */
+    --ring: 271 76% 65%; /* #A05FF0 - Slightly lighter primary for focus rings */
+
+    --radius: 0.5rem; /* Rounded corners */
+
+    --chart-1: 271 70% 60%;
+    --chart-2: 262 60% 65%;
+    --chart-3: 271 80% 70%;
+    --chart-4: 262 70% 75%;
+    --chart-5: 271 75% 65%;
+
+    /* Sidebar specific colors - harmonious with the main theme */
+    --sidebar-background: 255 80% 92%;   /* #E6DFFF slightly darker than main bg */
+    --sidebar-foreground: 270 25% 25%;   /* #4D3F4D */
+    --sidebar-primary: 271 76% 53%;      /* #8A2BE2 */
+    --sidebar-primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --sidebar-accent: 262 52% 58%;       /* #6A5ACD */
+    --sidebar-accent-foreground: 0 0% 100%; /* #FFFFFF */
+    --sidebar-border: 255 30% 80%;       /* #C9C1D9 */
+    --sidebar-ring: 271 76% 65%;         /* #A05FF0 */
+  }
+
+  .dark {
+    /* Keeping dark mode consistent with previous "Matrix Green" for now, 
+       as PRD focuses on light mode. Can be updated later if needed. */
+    --background: 206 29% 6%; /* #0b0f12 */
+    --foreground: 120 30% 88%; /* Light desaturated green for text */
+
+    --card: 207 18% 10%; /* #151A1E */
+    --card-foreground: 120 30% 88%;
+
+    --popover: 207 18% 10%;
+    --popover-foreground: 120 30% 88%;
+
+    --primary: 120 100% 50%; /* #00FF00 Matrix Green */
+    --primary-foreground: 206 29% 10%; 
+
+    --secondary: 120 60% 30%; 
+    --secondary-foreground: 120 100% 90%; 
+
+    --muted: 120 30% 20%; 
+    --muted-foreground: 120 25% 70%; 
+
+    --accent: 120 100% 50%; 
+    --accent-foreground: 206 29% 10%; 
+
+    --destructive: 0 70% 50%; 
+    --destructive-foreground: 0 0% 100%; 
+
+    --border: 120 60% 20%; 
+    --input: 207 18% 12%; 
+    --ring: 120 100% 60%; 
+
+    --chart-1: 120 100% 60%;
+    --chart-2: 120 80% 50%;
+    --chart-3: 120 70% 40%;
+    --chart-4: 120 90% 55%;
+    --chart-5: 120 60% 45%;
+    /* --radius: 0.5rem; /* already set in :root */
+
+    /* Sidebar specific colors for dark mode */
+    --sidebar-background: 206 29% 5%;
+    --sidebar-foreground: 120 25% 85%;
+    --sidebar-primary: 120 100% 50%;
+    --sidebar-primary-foreground: 206 29% 6%;
+    --sidebar-accent: 120 100% 50%;
+    --sidebar-accent-foreground: 206 29% 6%;
+    --sidebar-border: 120 60% 15%;
+    --sidebar-ring: 120 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
