@@ -1,18 +1,10 @@
 {
   "hosting": {
+    "public": "src",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "run": {
-          "serviceId": "dibsy-deals",
-          "region": "europe-west1"
-        }
-      }
     ]
   },
   "apphosting": {
